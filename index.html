@@ -7,8 +7,6 @@
 		<meta charset="UTF-8">
 		<meta name="title" content="Ambire contracts deployer">
 		<meta name="description" content="Ambire contracts deployer">
-
-		<link rel="stylesheet" href="./style.css?ver=2">
 	</head>
 
 	<body>
@@ -32,7 +30,7 @@
             </div>
             <button v-if="web3.account" v-on:click.stop="deploy()" :disabled="web3.pending">Копче</button>
             <button v-if="web3.account" v-on:click.stop="getNonce()" :disabled="web3.pending">GetNonce</button>
-		    <script src="./js/main.js?v=7"></script>
+		    <script type="module" src="./js/main.js?v=8"></script>
 	    </div>
     </body>
 </html>
